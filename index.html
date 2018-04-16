@@ -1,80 +1,193 @@
 <html>
-    <head>
-        <title>CSS skin</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link type="text/css" rel="stylesheet" href="skin.css">
-    </head>
-    <body>
-        <div>
-            <section id="intro">
-                <h2 id="intro_heading">CSS Components</h2>
+
+<head>
+    <title>CSS skin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="skin.min.css">
+</head>
+
+<body>
+    <div>
+        <section id="intro">
+            <h2 id="intro_heading">CSS Components</h2>
+        </section>
+        <section id="button">
+            <h2 id="button_heading">Button</h2>
+            <p>A button is most typically used to trigger a custom JavaScript action (e.g. fetch new results, open a dialog
+                or expand a menu).</p>
+            <p>A button may also be used, without JavaScript, to submit or reset a form.</p>
+
+            <h3>Default Button</h3>
+            <p>Use the
+                <span class="highlight">btn</span> class on a button element to create the default button.</p>
+            <p>On hover, the text in the button should
+                <strong>not</strong> be underlined.</p>
+            <div class="demo">
+                <p>It currently looks like this: </p>
+                <button class="btn btn--default">Button</button>
+            </div>
+            <div class="expected">
+                <p>It should eventually look like this: </p>
+                <img src="./img/button.png" />
+            </div>
+
+            <h3>Primary Button</h3>
+            <p>Use the
+                <span class="highlight">btn--primary</span> hierarchy modifier to create a primary button.</p>
+            <p>This means that you will use both
+                <span class="highlight">btn</span> and
+                <span class="highlight">btn--primary</span> classes.</p>
+            <div class="demo">
+                <p>It currently looks like this: </p>
+                <button class="btn btn--primary">Button</button>
+            </div>
+            <div class="expected">
+                <p>It should eventually look like this: </p>
+                <img src="./img/primary-button.png" />
+            </div>
+
+            <h3>Secondary Button</h3>
+            <p>Use the
+                <span class="highlight">btn--secondary</span> hierarchy modifier to create a secondary button.</p>
+            <p>This means that you will use both
+                <span class="highlight">btn</span> and
+                <span class="highlight">btn--secondary</span> classes.</p>
+            <div class="demo">
+                <p>It currently looks like this: </p>
+                <button class="btn btn--secondary">Button</button>
+            </div>
+            <div class="expected">
+                <p>It should eventually look like this: </p>
+                <img src="./img/secondary-button.png" />
+            </div>
+
+            <h3>Large Button</h3>
+            <p>Use the
+                <span class="highlight">btn--large</span> size modifier to create a large button.</p>
+            <p>This means that you will use both
+                <span class="highlight">btn</span> and
+                <span class="highlight">btn--large</span> classes.</p>
+            <div class="demo">
+                <p>It currently looks like this: </p>
+                <button class="btn btn--large">Button</button>
+            </div>
+            <div class="expected">
+                <p>It should eventually look like this: </p>
+                <img src="./img/large-button.png" />
+            </div>
+
+            <h3>Extra-Large Button</h3>
+            <p>Use the
+                <span class="highlight">btn--extra-large</span> size modifier to create an extra large button.</p>
+            <p>This means that you will use both
+                <span class="highlight">btn</span> and
+                <span class="highlight">btn--extra-large</span> classes.</p>
+            <div class="demo">
+                <p>It currently looks like this: </p>
+                <button class="btn btn--extra-large">Button</button>
+            </div>
+            <div class="expected">
+                <p>It should eventually look like this: </p>
+                <img src="./img/extra-large-button.png" />
+            </div>
+            <!--  -->
+            <section class="cards">
+                <div class="demo">
+                    <h3>Rotating cards with details at the back</h3>
+                    <p>It adds cards that can be rotated by hovering and clickable at the back so that the popup will be shown.
+                        </p>
+                </div>
+                <div class="card">
+                    <div class="card__side card__side--front card__side--front-1">
+                        <div class="card__title">Popup</div>
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        </div>
+                        <div class="card__turnback">
+                            Turn back
+                        </div>
+                    </div>
+                    <div class="card__side card__side--back card__side--back-1 center-flex">
+                        <a href="#popup" class="popup-btn card__back-link">click me!</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__side card__side--front card__side--front-2">
+                        <div class="card__title">Popup</div>
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        </div>
+                        <div class="card__turnback">
+                            Turn back
+                        </div>
+                    </div>
+                    <div class="card__side card__side--back card__side--back-2 center-flex">
+                        <a href="#popup" class="popup-btn card__back-link">click me!</a>
+                    </div>
+                </div>
             </section>
-            <section id="button">
-                <h2 id="button_heading">Button</h2>
-                <p>A button is most typically used to trigger a custom JavaScript action (e.g. fetch new results, open a dialog or expand a menu).</p>
-                <p>A button may also be used, without JavaScript, to submit or reset a form.</p>
-
-                <h3>Default Button</h3>
-                <p>Use the <span class="highlight">btn</span> class on a button element to create the default button.</p>
-                <p>On hover, the text in the button should <strong>not</strong> be underlined.</p>
+            <!-- contact form -->
+            <section>
                 <div class="demo">
-                    <p>It currently looks like this: </p>
-                    <button class="btn">Button</button>
+                    <h3>Form with custom buttons and input fields</h3>
+                    <p>It has very cool feature like when you start typing in the input field of the form the placeholder text
+                        moves down and the the color of the bottom border changes to green according to the validity of the
+                        form field (email). And also click the radio button to see the color indicating that the button is
+                        active.
+                    </p>
                 </div>
-                <div class="expected">
-                    <p>It should eventually look like this: </p>
-                    <img src="./img/button.png" />
+                <div class="section-contact">
+                    <div class="contact">
+                        <form action="#" class="contact-form">
+                            <h1 class="heading-primary">Heading one</h1>
+                            <div class="contact-form__group">
+                                <input type="text" class="contact-form__input" id="name" placeholder="Full Name" required>
+                                <label class="contact-form__label" for="name"> Full Name </label>
+                            </div>
+                            <div class="contact-form__group">
+                                <input type="email" class="contact-form__input" placeholder="Email Address" id="email" required>
+                                <label class="contact-form__label" for="email">Email Address</label>
+                            </div>
+                            <div class="contact-form__group">
+                                <input type="radio" class="contact-form__radio" id="small" name="contact">
+                                <label class="contact-form__label-radio" for="small">
+                                    <span class="contact-form__custom-radio"></span>
+                                    Small
+                                </label>
+                                <input type="radio" class="contact-form__radio" id="large" name="contact">
+                                <label class="contact-form__label-radio" for="large">
+                                    <span class="contact-form__custom-radio"></span>
+                                    Large
+                                </label>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-
-                <h3>Primary Button</h3>
-                <p>Use the <span class="highlight">btn--primary</span> hierarchy modifier to create a primary button.</p>
-                <p>This means that you will use both <span class="highlight">btn</span> and <span class="highlight">btn--primary</span> classes.</p>
-                <div class="demo">
-                    <p>It currently looks like this: </p>
-                    <button class="btn btn--primary">Button</button>
-                </div>
-                <div class="expected">
-                    <p>It should eventually look like this: </p>
-                    <img src="./img/primary-button.png" />
-                </div>
-
-                <h3>Secondary Button</h3>
-                <p>Use the <span class="highlight">btn--secondary</span> hierarchy modifier to create a secondary button.</p>
-                <p>This means that you will use both <span class="highlight">btn</span> and <span class="highlight">btn--secondary</span> classes.</p>
-                <div class="demo">
-                    <p>It currently looks like this: </p>
-                    <button class="btn btn--secondary">Button</button>
-                </div>
-                <div class="expected">
-                    <p>It should eventually look like this: </p>
-                    <img src="./img/secondary-button.png" />
-                </div>
-
-                <h3>Large Button</h3>
-                <p>Use the <span class="highlight">btn--large</span> size modifier to create a large button.</p>
-                <p>This means that you will use both <span class="highlight">btn</span> and <span class="highlight">btn--large</span> classes.</p>
-                <div class="demo">
-                    <p>It currently looks like this: </p>
-                    <button class="btn btn--large">Button</button>
-                </div>
-                <div class="expected">
-                    <p>It should eventually look like this: </p>
-                    <img src="./img/large-button.png" />
-                </div>
-
-                <h3>Extra-Large Button</h3>
-                <p>Use the <span class="highlight">btn--extra-large</span> size modifier to create an extra large button.</p>
-                <p>This means that you will use both <span class="highlight">btn</span> and <span class="highlight">btn--extra-large</span> classes.</p>
-                <div class="demo">
-                    <p>It currently looks like this: </p>
-                    <button class="btn btn--extra-large">Button</button>
-                </div>
-                <div class="expected">
-                    <p>It should eventually look like this: </p>
-                    <img src="./img/extra-large-button.png" />
-                </div>
-
             </section>
-        </div>
-    </body>
+            <!-- invisible popup -->
+            <div class="popup" id="popup">
+                <a href="#">
+                    <span class="popup__btn">&nbsp;</span>
+                </a>
+                <div class="popup__content">
+                    <figure class="popup__left popup__left--1">
+                        <img src="#" alt="no image" class="popup__img">
+                    </figure>
+                    <figure class="popup__left popup__left--2">
+                        <img src="#" alt="no image" class="popup__img">
+                    </figure>
+                    <div class="popup__right">
+                        <h1 class="popup__right-head">heading</h1>
+                        <p class="popup__right-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae totam quas possimus! Aspernatur
+                            deleniti explicabo modi tempore nam odio optio quidem facilis. Dolore est sapiente doloribus
+                            architecto odio, eveniet error?</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!--  -->
+    </section>
+    </div>
+</body>
+
 </html>

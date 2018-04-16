@@ -1,0 +1,33 @@
+//base setup
+*, ::after, ::before{
+    padding: 0;
+    margin:0;
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%; //1rem = 10px;
+}
+body{
+    box-sizing: border-box;
+    background-color: darken(#fff, 5%);
+    > div{
+        font-size: 1.5rem;
+        padding: 1.8rem;
+        max-width: 80%;
+        margin:0 auto;
+        background-color:#fff;
+    }
+}
+#intro_heading{
+    margin-bottom: 1.5rem;
+}
+#button {
+    > h2, h3{
+        margin:1rem 0;
+    }
+    > p{
+        font-size: 2rem;
+        margin-bottom: .75rem;
+    }
+   
+}
