@@ -11,6 +11,13 @@
     > p{
         font-size: 1.8rem;
     }
+    &-nav{
+        height: 15rem;
+        >ul{
+            margin: 2rem 0;
+        }
+        
+    }
 }
 .expected{
     > p{
